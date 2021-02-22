@@ -42,6 +42,8 @@ regionSchema = base_object(
     no_color=True,
     roles_write=["region-admin, admin"],
     roles_create=["admin"],
+    roles_read=["public"],
+    roles_list=["public"]
 )
 
 regionSchema["properties"].update(

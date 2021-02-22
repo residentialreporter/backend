@@ -42,6 +42,8 @@ locationSchema = base_object(
     no_color=True,
     roles_create=["user"],
     roles_write=["owner", "region-admin", "admin", "moderator"],
+    roles_read=["public"],
+    roles_list=["public"]
 )
 
 locationSchema["properties"].update(
